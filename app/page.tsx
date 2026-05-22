@@ -56,7 +56,7 @@ export default function Home() {
       <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-green-500/20 rounded-2xl shadow-lg p-6 sm:p-8">
         {/* Title */}
         <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 bg-linear-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
-          EasyApply
+          Easy Apply
         </h1>
 
         {/* Email Input */}
