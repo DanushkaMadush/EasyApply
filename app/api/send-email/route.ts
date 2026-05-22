@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import path from "path";
+import fs from "fs/promises";
 
 export async function POST(req: Request) {
   try {
@@ -7,39 +8,19 @@ export async function POST(req: Request) {
 
     const subject = `Application for ${position}`;
 
-    const htmlBody = `
-      <p>Dear Sir/Madam,</p>
+        const templatePath = path.join(
+      process.cwd(),
+      "app",
+      "templates",
+      "email-template.txt"
+    );
 
-      <p>
-        I am writing to express my interest in the <b>${position}</b> position.
-        As a Full Stack Engineer with hands-on experience in full-stack development
-        and cloud technologies, I am confident that my skills align well with the requirements of the role.
-      </p>
+    let emailTemplate = await fs.readFile(templatePath, "utf-8");
 
-      <p>
-        My professional background includes developing cloud-integrated web applications
-        using AWS services and deploying secure, scalable systems with Angular, React,
-        Node.js, ASP.NET, and Docker.
-      </p>
+    emailTemplate = emailTemplate.replace(/{{position}}/g, position);
 
-      <p>
-        I have attached my updated resume for your review. I would welcome the opportunity
-        to contribute to your team and further discuss how I can support the organization.
-      </p>
-
-      <p>
-        Thank you for considering my application. I look forward to the possibility of an interview.
-      </p>
-
-      <br/>
-
-      <p>
-        Best regards,<br/>
-        Your Name<br/>
-        email<br/>
-        contact no
-      </p>
-    `;
+    const htmlBody = emailTemplate
+      .replace(/\n/g, "<br/>");
 
     const cvPath = path.join(process.cwd(), "public", "YOUR CV.pdf");
     const coverPath = path.join(
