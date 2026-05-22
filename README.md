@@ -1,5 +1,6 @@
 # Easy Apply
 
+<img width="873" height="491" alt="1779446738857" src="https://github.com/user-attachments/assets/e3ddf74a-87f0-4abd-a1fa-2b7e47907832" />
 
 
 A lightweight open-source job application helper built with Next.js and Nodemailer.
@@ -25,8 +26,6 @@ Easy Apply was created to reduce repetitive manual work when applying for jobs. 
 # Tech Stack
 
 * Next.js
-* Nodemailer
-* Gmail SMTP
 * Vercel
 
 ---
@@ -62,7 +61,7 @@ The app will:
 # Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/DanushkaMadush/EasyApply.git
 ```
 
 ```bash
@@ -138,6 +137,9 @@ Google requires:
 * 2-Step Verification enabled
 * App Password generation
 
+<img width="1888" height="923" alt="image" src="https://github.com/user-attachments/assets/fd4cfcdb-9a89-4031-beca-cc4338bdf001" />
+
+
 ---
 
 ## Step 1 — Enable 2-Step Verification
@@ -173,7 +175,7 @@ EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-google-app-password
 ```
 
-⚠️ Never commit `.env.local` to GitHub.
+Never commit `.env.local` to GitHub.
 
 ---
 
@@ -217,6 +219,8 @@ https://vercel.com/
 
 Import your GitHub repository.
 
+<img width="1891" height="895" alt="image" src="https://github.com/user-attachments/assets/a616658b-f1e0-41af-96f1-ccd24a884812" />
+
 ---
 
 ## Step 3 — Add Environment Variables
@@ -249,32 +253,6 @@ After deployment, you can bookmark the app on your phone and use it almost like 
 3. Tap “Add to Home Screen”
 
 Now Easy Apply works similarly to a web app from your home screen.
-
----
-
-# Screenshots
-
-## Home Screen
-
-(Add screenshot here)
-
----
-
-## Email Template
-
-(Add screenshot here)
-
----
-
-## Gmail App Password Setup
-
-(Add screenshot here)
-
----
-
-## Vercel Deployment
-
-(Add screenshot here)
 
 ---
 
