@@ -1,0 +1,19 @@
+Dear Sir/Madam,
+
+I am writing to express my interest in the position.
+
+As a Full Stack Engineer with hands-on experience in full-stack development
+and cloud technologies, I am confident that my skills align well with the requirements of the role.
+
+My professional background includes developing cloud-integrated web applications
+using AWS services and deploying secure, scalable systems with Angular, React,
+Node.js, ASP.NET, and Docker.
+
+I have attached my updated resume for your review.
+
+Thank you for considering my application.
+
+Best regards,
+Your Name
+email
+contact no
